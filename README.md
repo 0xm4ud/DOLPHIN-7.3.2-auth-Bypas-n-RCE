@@ -1,7 +1,7 @@
 # (m4ud) DOLPHIN-7.3.2-auth-Bypas-n-RCE
 
 
-    Usage: test.py [options]
+    Usage: dolphin_rce.py [options]
 
     Options:
       -h, --help            show this help message and exit
